@@ -49,6 +49,7 @@ const Home = () => {
 
   return (
     <div className='px-8'>
+      
       <div className='px-4 bg-beast'>
         <div className='flex bg-beast'>
           <div className='w-1/2  py-28'>
@@ -77,7 +78,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='w-1/2 relative ml-32 border-b-1 border-blue-400'>
+          <div className='w-1/2 relative ml-32 '>
 
             <img src={im2} alt='im2' className="absolute  w-[20rem] h-[450px] top-0 mt-18 ml-[10rem] " />
             <div className='relative w-[20rem] h-[450px] mt-20 ml-[2rem]'>
@@ -87,9 +88,9 @@ const Home = () => {
 
           </div>
         </div>
-        <div className='w-full'>
+        <div className='w-full '>
           {searchResults.length > 0 && (
-            <div className="grid grid-cols-10 gap-4">
+            <div className="flex justify-center place-content-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
               {searchResults.map((movie, index) => (
                 <Card
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -109,7 +110,7 @@ const Home = () => {
         <p className='flex'>See More</p>
       </div>
 
-      <div className='flex justify-center place-content-center items-center grid grid-cols-7 '>
+      <div className='flex justify-center place-content-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
 
         {movies.map((movie, index) => (
           <NavLink to={`/detail/${movie.id}`}>
@@ -131,7 +132,7 @@ const Home = () => {
       </div>
 
 
-      <div className='flex justify-center place-content-center items-center grid grid-cols-7 '>
+      <div className='flex justify-center place-content-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 '>
 
         {pop.map((popular, index) => (
           <Card
