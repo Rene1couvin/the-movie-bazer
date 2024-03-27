@@ -9,7 +9,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="flex flex-wrap justify-between items-center px-4 md:px-8 sm:px-24 py-4">
+    <nav className="flex flex-wrap justify-between items-center sticky top-0 bg-[#242424] px-4 md:px-8 sm:px-24 py-4">
       <div className="text-lg font-bold">
         <img src={Logo} alt="Logo" className="h-10" />
       </div>
@@ -22,7 +22,7 @@ const Navigation = () => {
             />
           </svg>
         </button>
-        <ul className={`${menuOpen ? 'block' : 'hidden'} absolute md:hidden bg-gray-900 pr-8 mt-2`}>
+        <ul className={`${menuOpen ? 'block' : 'hidden'} absolute  bg-gray-900 pr-8 `}>
           <li><a href="/" className="block text-white px-4 py-2 hover:text-gray-900">Home</a></li>
           <li><a href="/explore" className="block text-white px-4 py-2 hover:text-gray-900">Explore</a></li>
           <li><a href="/genre" className="block text-white px-4 py-2 hover:text-gray-900">Genre</a></li>
@@ -31,7 +31,7 @@ const Navigation = () => {
           <li><a href="/tvshows" className="block text-white px-4 py-2 hover:text-gray-900">TV Shows</a></li>
         </ul>
       </div>
-      <ul className="hidden md:flex md:space-x-16">
+      <ul className="hidden md:flex md:space-x-16 z-10">
         <li><a href="/" className="text-white hover:text-gray-900">Home</a></li>
         <li><a href="/explore" className="text-white hover:text-gray-900">Explore</a></li>
         <li><a href="/genre" className="text-white hover:text-gray-900">Genre</a></li>

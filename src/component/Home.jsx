@@ -56,7 +56,7 @@ const Home = () => {
             <p className='text-2xl'>FIND MOVIES</p>
             <p className='text-4xl font-sans font-bold beast'>TV SHOW AND MORE</p>
 
-            <p className='py-4'>
+            <p className='py-4 w-auto'>
               Movies are a powerful medium that captivate audiences through storytelling, visuals, and sound. They transport viewers to different worlds, evoke a range of emotions, and provoke thought and reflection. From gripping dramas that explore the depths of human experience to heartwarming comedies that offer moments of laughter and joy, movies cater to diverse tastes and interests.
             </p>
             <button className='flex rounded-xl border-2 border-white px-4 py-2'><img src={sv} alt="sv" className="h-[40px]" /><p className='pt-2 px-2'>Watch Tutorial</p></button>
@@ -76,7 +76,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className='md:w-1/2 relative ml-0 md:ml-32 md:pr-8'>
+          <div className='md:w-1/2 relative ml-0 md:ml-32 md:pr-8 -z-10'>
             <img src={im2} alt='im2' className="absolute w-[20rem] h-[450px] top-0 mt-18 ml-[10rem]" />
             <div className='relative w-[20rem] h-[450px] mt-20 ml-[2rem]'>
               <img src={im1} alt='im1' className="absolute w-full h-full object-cover" />
@@ -121,8 +121,9 @@ const Home = () => {
           </NavLink>
         ))}
       </div>
-      <div className='flex items-center px-4 py-8'>
-        <p className='flex'>YOU MAY LIKE THIS</p>
+      <div className='flex items-center px-4 pt-32'>
+        <p className='fle<nav className="flex flex-wrap justify-between items-center sticky top-0 bg-[#242424] px-4 md:px-8 sm:px-24 py-4">
+x'>YOU MAY LIKE THIS</p>
         <hr className='flex-grow border-t border-gray-700 mx-4' />
         <p className='flex'>See More</p>
       </div>

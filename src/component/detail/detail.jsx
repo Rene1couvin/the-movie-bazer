@@ -27,7 +27,7 @@ function Detail() {
             <div className='w-1/2'>
                 <NavLink to={`/movies/${data.id}`}>
                     <div className='-slate-500'>
-                        <img src={`https://image.tmdb.org/t/p/w500${data.poster_path}`} className='w-[44rem] h-[40rem] pl-8' />
+                        <img src={`https://image.tmdb.org/t/p/w500${data.poster_path}`} className='w-[44rem] h-[32rem] pl-8' />
                         
                     </div>
                 </NavLink>
