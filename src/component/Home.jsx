@@ -48,7 +48,7 @@ const Home = () => {
   };
 
   return (
-    <div className='px-8'>
+    <div className='px-4'>
 
       <div className='px-4 bg-beast'>
         <div className='flex flex-col md:flex-row bg-beast'>
@@ -76,7 +76,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className='md:w-1/2 relative ml-0 md:ml-32'>
+          <div className='md:w-1/2 relative ml-0 md:ml-32 md:pr-8'>
             <img src={im2} alt='im2' className="absolute w-[20rem] h-[450px] top-0 mt-18 ml-[10rem]" />
             <div className='relative w-[20rem] h-[450px] mt-20 ml-[2rem]'>
               <img src={im1} alt='im1' className="absolute w-full h-full object-cover" />
@@ -111,10 +111,8 @@ const Home = () => {
       <div className='flex justify-center place-content-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5'>
 
         {movies.map((movie, index) => (
-          <NavLink to={`/detail/${movie.id}`}>
-
+          <NavLink key={index} to={`/detail/${movie.id}`}>
             <Card
-              key={index}
               title={movie.original_title}
               price={movie.vote_average}
               vote={movie.vote_count}
