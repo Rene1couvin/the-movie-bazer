@@ -108,7 +108,7 @@ const Home = () => {
         <p className='flex'>See More</p>
       </div>
 
-      <div className='flex justify-center place-content-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5'>
+      <div className='flex justify-center place-content-center items-center grid grid-cols-1 gap-y-24 sm:grid-cols-2 md:grid-cols-5'>
 
         {movies.map((movie, index) => (
           <NavLink key={index} to={`/detail/${movie.id}`}>
@@ -128,7 +128,7 @@ const Home = () => {
       </div>
 
 
-      <div className='flex justify-center place-content-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 '>
+      <div className='flex justify-center place-content-center items-center grid grid-cols-1 gap-y-24 sm:grid-cols-2 md:grid-cols-5'>
 
         {pop.map((popular, index) => (
           <Card
