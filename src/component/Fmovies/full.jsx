@@ -7,6 +7,7 @@ import YouTubeIframe from 'react-youtube-iframe';
 function Full() {
     const {id} = useParams()
     const [movieKey,setMoviekey] = useState([])
+    
     useEffect(() =>{
         const moviesData = async()=>{
             const respone = await axios.get(`https://api.themoviedb.org/3/movie/${id}/videos?language=en-US&api_key=5c291c5c3ce259fccb18540798c90d70`)
