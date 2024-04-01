@@ -6,6 +6,7 @@ import Detail from "./component/detail/detail";
 import Navigation from "./component/Navigation";
 import Login from "./component/Auth/Login";
 import Signup from "./component/Auth/Signup";
+import SearchPage from "./component/search/search";
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/movies/:id" element={<Fmovies />} />
           <Route path="Login" element={<Login/>} />
           <Route path="Signup" element={<Signup/>} />
+          <Route path="search" element={<SearchPage/>} />
         </Route>
       </Routes>
     </BrowserRouter>

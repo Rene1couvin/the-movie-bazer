@@ -21,6 +21,12 @@ const Login = () => {
     console.log('Password:', password);
     // Add your login logic here
   };
+  const Handleform = (e)=>{
+    e.preventDefault();
+    console.log(data)
+    if(localStorage.setItem('userdata',JSON.stringify(email))){
+        window.location.href="/movies/:id"
+    }}
 
   return (
     <div className="container mx-auto mt-8">

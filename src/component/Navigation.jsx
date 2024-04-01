@@ -30,6 +30,7 @@ const Navigation = () => {
           <li><a href="/movies" className="block text-white px-4 py-2 hover:text-gray-900">Movies</a></li>
           <li><a href="/tvshows" className="block text-white px-4 py-2 hover:text-gray-900">TV Shows</a></li>
           <li><a href="/Login" className="block text-white px-4 py-2 hover:text-gray-900">Login</a></li>
+          <li><a href="/search" className="block text-white px-4 py-2 hover:text-gray-900">Search</a></li>
         </ul>
       </div>
       <ul className="hidden md:flex md:space-x-16 z-10">
@@ -40,6 +41,8 @@ const Navigation = () => {
         <li><a href="/movies" className="text-white hover:text-gray-900">Movies</a></li>
         <li><a href="/tvshows" className="text-white hover:text-gray-900">TV Shows</a></li>
         <li><a href="/Login" className="text-white  hover:text-gray-900">Login</a></li>
+        <li><a href="/search" className="block text-white px-4 py-2 hover:text-gray-900">Search</a></li>
+
 
       </ul>
     </nav>
