@@ -14,7 +14,7 @@ const Navigation = () => {
         <img src={Logo} alt="Logo" className="h-10" />
       </div>
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="block text-white focus:outline-none pr-8">
+        <button onClick={toggleMenu} className="block text-white focus:outline-none">
           <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
             <path
               fillRule="evenodd"
